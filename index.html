@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>명지대 바이브 코딩 부트캠프</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="bg-black/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold">
+                        <img src="https://www.mju.ac.kr/sites/mju_kor/images/logo_white.png" alt="명지대학교 로고" class="h-8">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="hover:text-gray-300">메인</a>
+                    <a href="reviews.html" class="hover:text-gray-300">후기</a>
+                    <a href="projects.html" class="hover:text-gray-300">이전 기수 결과물</a>
+                    <a href="register.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">수강 신청</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="/" class="block py-2 px-4 text-sm hover:bg-gray-700">메인</a>
+            <a href="reviews.html" class="block py-2 px-4 text-sm hover:bg-gray-700">후기</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-gray-700">이전 기수 결과물</a>
+            <a href="register.html" class="block py-2 px-4 text-sm bg-blue-600 hover:bg-blue-700 text-white">수강 신청</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+        <section class="text-center">
+            <h1 class="text-5xl font-bold mb-4">명지대 바이브 코딩 부트캠프</h1>
+            <p class="text-xl text-gray-400 mb-8">AI와 함께하는 개발의 새로운 패러다임, 당신의 가능성을 코딩으로 깨우세요.</p>
+            <a href="register.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">지금 바로 시작하기</a>
+        </section>
+
+        <section class="mt-24">
+            <h2 class="text-4xl font-bold text-center mb-12">무엇을 배우나요?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">1일차: 바이브 코딩의 이해와 환경세팅</h3>
+                    <p class="text-gray-400">기반지식 학습, 다양한 분야에 활용, 배포, 바이브 코딩의 프롬프트 입력 방법, CursorAI, ChatGPT를 활용하여 주제에 맞는 파이썬 코드 작성 실습</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">2일차: 바이브 코딩을 위한 디자인</h3>
+                    <p class="text-gray-400">UI/UX 디자인, Firebase 구조 소개 및 설정, Firebase와 FastAPI 연동 실습</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">3일차: 백엔드 연결 등 고급 기능 설계</h3>
+                    <p class="text-gray-400">고급 기능을 위해 알아야 할 지식, 프롬프트 기반 발성법, 문제 정의 및 페르소나 설정, React 기본 구조 및 Vite 환경 설정</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">4일차: Firebase 연동 로그인 UI 구성</h3>
+                    <p class="text-gray-400">FastAPI 기본 구조, Firebase 인증 API 및 CRUD 실습</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">5일차: MCP 개요 및 Agent 설계</h3>
+                    <p class="text-gray-400">랭크파와 MCP 연동 실습, GitHub 기반 협업</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">6일차: TDD, 코드 리뷰, 배포</h3>
+                    <p class="text-gray-400">TDD, 코드 리뷰, 커밋 메시지, 문서화 실습, Firebase Hosting, GCP 기본, 배포 실습 및 디버깅, 문제 해결 제안서 작성 워크숍</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-24">
+            <h2 class="text-4xl font-bold text-center mb-12">프로젝트</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">1일차</h3>
+                    <p class="text-gray-400">기획안 멘토링 (온라인_비대면) : 팀별 기획안 검토, 기능 구현 계획 수립</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">2일차</h3>
+                    <p class="text-gray-400">세부구현 멘토링: 기능별 세부(백엔드/프론트), MCP/Agent 연동 점검</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">3일차</h3>
+                    <p class="text-gray-400">집중 프로젝트: 팀별 집중 프로젝트 및 팀별 순환 멘토링 진행</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-24">
+            <h2 class="text-4xl font-bold text-center mb-12">강사 소개</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center bg-gray-900 p-8 rounded-lg">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAyMTVfMjYy%2FMDAxNzA3OTgxODk0OTY0.qOd_sJj_2iV3GkHwZ5x22a_uVv2b_r2N2a-O-3-kyOQg.h9a389d2f-j0Dk-4KbB_yvWb0o-m_mYwIe-s-O-w.JPEG.happymarketday%2F%25C4%25B8%25C3%25B3%25B8%25B8%25C0%25CC%25C6%25AE_%25B4%25DA%25C5%25CD%25C0%25A7_%25BE%25E7%25C1%25F8%25C0%25FA.jpg&type=sc960_832" alt="양진욱 강사" class="w-48 h-48 rounded-full object-cover mb-8 md:mb-0 md:mr-8">
+                <div>
+                    <h3 class="text-3xl font-bold">양진욱 강사</h3>
+                    <p class="text-xl text-gray-400">주식회사 한시경 대표</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <p>(주)한시경 | 대표: 양진욱 | 사업자번호: 189-81-02353 | 정보통신업</p>
+                <p>주소: 서울특별시 서초구 서초대로74길 51, 1304호(서초동, 강남역 롯데골드로즈)</p>
+                <p>전화: 02-2043-2748 | 이메일: onepm@onepm.kr</p>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.onepm.kr/" target="_blank" class="hover:text-white">홈페이지</a>
+                <a href="https://www.youtube.com/@hansikyung" target="_blank" class="hover:text-white">유튜브</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
